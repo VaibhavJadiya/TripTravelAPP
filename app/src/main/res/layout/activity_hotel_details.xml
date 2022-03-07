@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/hotel_screen_image"
+        android:src="@drawable/test"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/star_imageView"
+        android:text="Title"
+        android:id="@+id/hotel_title"
+        android:layout_margin="19dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:paddingStart="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotel_screen_image" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/category_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/hotel_title">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/hotel_star_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="4.2"
+            android:layout_marginTop="5sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/hotel_veg_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_veg"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/hotel_veg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Veg"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/hotel_veg_image"
+            app:layout_constraintStart_toStartOf="@+id/hotel_veg_image"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_veg_image" />
+
+        <ImageView
+            android:id="@+id/hotel_health_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/ic_med"
+            app:layout_constraintStart_toEndOf="@+id/hotel_veg_image"
+            app:layout_constraintTop_toTopOf="@+id/hotel_veg_image"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/hotel_health_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Healthy"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/hotel_health_image"
+            app:layout_constraintStart_toStartOf="@+id/hotel_health_image"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_health_image" />
+
+        <ImageView
+            android:id="@+id/hotel_ac_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:src="@drawable/ic_ac"
+            app:layout_constraintStart_toEndOf="@+id/hotel_health_image"
+            app:layout_constraintTop_toTopOf="@+id/hotel_health_image"
+            app:tint="@android:color/holo_purple" />
+
+        <TextView
+            android:id="@+id/hotel_ac_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Ac"
+            android:layout_marginTop="5sp"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/hotel_ac_image"
+            app:layout_constraintStart_toStartOf="@+id/hotel_ac_image"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_ac_image" />
+
+        <ImageView
+            android:id="@+id/hotel_vip_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:src="@drawable/ic_class"
+            app:layout_constraintStart_toEndOf="@+id/hotel_ac_image"
+            app:layout_constraintTop_toTopOf="@+id/hotel_ac_image"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/hotel_vip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="VIP"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/hotel_vip_image"
+            app:layout_constraintStart_toStartOf="@+id/hotel_vip_image"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_vip_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room:- "
+        android:id="@+id/hotel_rooms"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@id/category_layout"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:- "
+        android:id="@+id/hotel_prices"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@id/hotel_rooms"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Images"
+        android:id="@+id/images_text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@id/hotel_prices"
+        android:layout_margin="10dp"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/images_text">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/image1"/>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/image2"/>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:id="@+id/image3"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Book Hotel!!"
+        android:id="@+id/book_hotel_btn"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/star_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/hotel_screen_image"
+        app:tint="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/hotel_star_rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="4.2"
+        android:layout_marginTop="5sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/star_imageView"
+        app:layout_constraintStart_toStartOf="@+id/star_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/star_imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

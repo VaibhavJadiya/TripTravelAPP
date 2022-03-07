@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.printoverit.travelapp.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_locationDetailsActivity"
+            app:destination="@id/locationDetailsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/locationDetailsActivity"
+        android:name="com.printoverit.travelapp.LocationDetailsActivity"
+        android:label="activity_location_details"
+        tools:layout="@layout/activity_location_details" >
+        <argument
+            android:name="location"
+            app:argType="com.printoverit.travelapp.dataclasses.Ajmer" />
+        <argument
+            android:name="pos"
+            app:argType="integer" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="beawar"
+            app:argType="com.printoverit.travelapp.dataclasses.Beawar" />
+        <argument
+            android:name="bhilwara"
+            app:argType="com.printoverit.travelapp.dataclasses.Bhilwara" />
+        <argument
+            android:name="bikaner"
+            app:argType="com.printoverit.travelapp.dataclasses.Bikaner" />
+        <argument
+            android:name="jaipur"
+            app:argType="com.printoverit.travelapp.dataclasses.Jaipur" />
+        <argument
+            android:name="jodhpur"
+            app:argType="com.printoverit.travelapp.dataclasses.Jodhpur" />
+        <argument
+            android:name="kota"
+            app:argType="com.printoverit.travelapp.dataclasses.Kota" />
+        <argument
+            android:name="tonk"
+            app:argType="com.printoverit.travelapp.dataclasses.Tonk" />
+        <argument
+            android:name="udaipur"
+            app:argType="com.printoverit.travelapp.dataclasses.Udaipur" />
+    </activity>
+    <fragment
+        android:id="@+id/flightsFragment"
+        android:name="com.printoverit.travelapp.fragments.FlightsFragment"
+        android:label="fragment_flights"
+        tools:layout="@layout/fragment_flights" >
+        <action
+            android:id="@+id/action_flightsFragment_to_flightDetails"
+            app:destination="@id/flightDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.printoverit.travelapp.fragments.HotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel" >
+        <action
+            android:id="@+id/action_hotelFragment_to_hotelDetailsActivity"
+            app:destination="@id/hotelDetailsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/flightDetails"
+        android:name="com.printoverit.travelapp.FlightDetails"
+        android:label="activity_flight_details"
+        tools:layout="@layout/activity_flight_details" >
+        <argument
+            android:name="dubai"
+            app:argType="com.printoverit.travelapp.trip.Dubai" />
+        <argument
+            android:name="usa"
+            app:argType="com.printoverit.travelapp.trip.USA" />
+        <argument
+            android:name="japan"
+            app:argType="com.printoverit.travelapp.trip.Japan" />
+        <argument
+            android:name="southKorea"
+            app:argType="com.printoverit.travelapp.trip.SouthKorea" />
+        <argument
+            android:name="philipines"
+            app:argType="com.printoverit.travelapp.trip.Philippine" />
+        <argument
+            android:name="malaysia"
+            app:argType="com.printoverit.travelapp.trip.Malaysia" />
+        <argument
+            android:name="selected"
+            app:argType="string" />
+    </activity>
+    <activity
+        android:id="@+id/hotelDetailsActivity"
+        android:name="com.printoverit.travelapp.HotelDetailsActivity"
+        android:label="activity_hotel_details"
+        tools:layout="@layout/activity_hotel_details" >
+        <argument
+            android:name="jaipur"
+            app:argType="com.printoverit.travelapp.hotel.Jaipur" />
+        <argument
+            android:name="jodhpur"
+            app:argType="com.printoverit.travelapp.hotel.Jodhpur" />
+        <argument
+            android:name="kota"
+            app:argType="com.printoverit.travelapp.hotel.Kota" />
+        <argument
+            android:name="udaipur"
+            app:argType="com.printoverit.travelapp.hotel.Udaipur" />
+        <argument
+            android:name="selected"
+            app:argType="string" />
+    </activity>
+</navigation>

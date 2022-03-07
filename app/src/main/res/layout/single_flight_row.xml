@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0sp"
+            android:layout_height="140dp"
+            app:cardCornerRadius="10sp"
+            android:layout_margin="5sp"
+            android:id="@+id/flightRowLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/flight_image"
+                    android:src="@drawable/plane_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/flight_image"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/arilines_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:lines="1"
+                        android:text="Indian Arilines"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.347"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/flight_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Jaipur to Dubai"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/arilines_name"
+                        app:layout_constraintStart_toStartOf="@+id/arilines_name"
+                        app:layout_constraintTop_toBottomOf="@+id/arilines_name" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flight_route"
+                        app:tint="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/flight_star_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="4.2"
+                        android:layout_marginTop="5sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView"
+                        app:layout_constraintStart_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <ImageView
+                        android:id="@+id/flight_veg_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_veg"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/flight_route"
+                        app:tint="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/flight_veg_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Veg"
+                        android:layout_marginTop="5sp"
+                        android:textColor="@color/grey"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="@+id/flight_veg_image"
+                        app:layout_constraintStart_toStartOf="@+id/flight_veg_image"
+                        app:layout_constraintTop_toBottomOf="@+id/flight_veg_image" />
+
+                    <ImageView
+                        android:id="@+id/flight_health_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
+                        android:src="@drawable/ic_class"
+                        app:layout_constraintStart_toEndOf="@+id/flight_veg_image"
+                        app:layout_constraintTop_toTopOf="@+id/flight_veg_image"
+                        app:tint="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/flight_health_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Healthy"
+                        android:layout_marginTop="5sp"
+                        android:textColor="@color/grey"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="@+id/flight_health_image"
+                        app:layout_constraintStart_toStartOf="@+id/flight_health_image"
+                        app:layout_constraintTop_toBottomOf="@+id/flight_health_image" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/app_light_theme_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/black" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/flitgh_price"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="12dp"
+                            android:text="₹500"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="15/20056454"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:id="@+id/flight_date"
+                        android:layout_margin="10dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

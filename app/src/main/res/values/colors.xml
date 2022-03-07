@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6169A4</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#505050</color>
+
+    <color name="app_theme_color">#0066FF</color>
+    <color name="app_secondry_color">#6169A4</color>
+    <color name="red_color">#FF4A4A</color>
+    <color name="orange_color">#F86435</color>
+    <color name="app_light_theme_color">#DDA4DCFA</color>
+
+    //Custom Chip Style
+    <color name="CheckedChipBackgroundColor">@color/app_light_theme_color</color>
+    <color name="UncheckedChipBackgroundColor">#45A1A1A1</color>
+    <color name="CheckedTextColor">@color/app_secondry_color</color>
+    <color name="UncheckedTextColor">@color/black</color>
+    <color name="cardview_background">@color/white</color>
+</resources>

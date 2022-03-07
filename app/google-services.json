@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840218198120",
+    "project_id": "travelapp-5b4e9",
+    "storage_bucket": "travelapp-5b4e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840218198120:android:b2dd1b1dd38f69f405fbdd",
+        "android_client_info": {
+          "package_name": "com.printoverit.travelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840218198120-vgathkjmb9l0soa3sv04s3sjfm70a24k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4s0m-tbDcVSoYafGQhdMfTsOYfVNdIUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840218198120-vgathkjmb9l0soa3sv04s3sjfm70a24k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
