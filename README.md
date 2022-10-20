@@ -1,6 +1,6 @@
 # TripTravelAPP
 
-# Outputs
+# Output
 
 ![WhatsApp Image 2022-10-20 at 11 15 49](https://user-images.githubusercontent.com/71292030/196867526-2b9c7c97-7f6c-4be2-a159-08313ecd97b7.jpeg)
 
